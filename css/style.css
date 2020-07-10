@@ -1,0 +1,122 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  height: 80vh;
+  width: 30%;
+  border: 3px solid darkblue;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: blueviolet;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .main-container {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .main-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-container {
+    width: 95%;
+  }
+}
+
+.main-container section {
+  display: flex;
+  height: 15%;
+  /* border: 2px solid blue; */
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #000053, #0e0e87, #1010b8);
+  font-weight: bolder;
+  color: aquamarine;
+  font-family: cursive;
+  font-size: 3rem;
+}
+
+.result-container {
+  height: 25% !important;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  white-space: initial;
+  color: #01386f;
+  background-image: linear-gradient(to right, #ffe4e4, #eee7ac, #fafafa);
+  font-weight: bolder;
+  font-family: cursive;
+}
+
+.result {
+  display: flex;
+  font-size: 3rem;
+  padding: 3%;
+  flex-wrap: wrap;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: initial;
+}
+
+.button {
+  margin: 0.05%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: cursive;
+  border: 1px solid #ebde69;
+  cursor: pointer;
+  user-select: none;
+  transition: 3s all ease-in-out;
+}
+
+.number-button {
+  color: #002b68;
+  background-image: linear-gradient(to right, #e3ca59e3, #e7d956, #d0d983);
+  transition: 1s all ease-in-out;
+}
+
+.number-button:active {
+  color: #002b68;
+  background-image: linear-gradient(to right, #7a8609e3, #cebf34, #8a980f);
+}
+
+.operator-button {
+  color: bisque;
+  background-image: linear-gradient(to right, #861414, #ef1a04, #ff301e);
+}
+
+.operator-button:active {
+  background-image: linear-gradient(to right, #840303, #a11506, #96160b);
+}
